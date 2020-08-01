@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <script>
+      class Calculadora {
+
+      somar() {
+        //Leitura
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 =  num1.value;
+        var n2 =  num2.value;
+        //Calculo
+        //var soma = parseFloat(n1) + parseFloat(n2);
+        var soma = n1 + n2;
+        //Saída
+        alert(soma);
+      }
+
+      subtrair() {
+        //Leitura
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 =  num1.value;
+        var n2 =  num2.value;
+        //Calculo
+        //var subtrai = parseFloat(n1) - parseFloat(n2);
+        var subtrai = n1 - n2;
+        //Saída
+        alert(subtrai);
+      }
+
+      multiplicar() {
+        //Leitura
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 =  num1.value;
+        var n2 =  num2.value;
+        //Calculo
+        //var multiplica = parseFloat(n1) * parseFloat(n2);
+        var multiplica = n1 * n2;
+        //Saída
+        alert(multiplica);
+      }
+
+       dividir() {
+        //Leitura
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 =  num1.value;
+        var n2 =  num2.value;
+        //Calculo
+        //var divide = parseFloat(n1) / parseFloat(n2);
+        if(n2 != 0){
+        var divide = n1 / n2;
+        alert(divide);
+        }
+        else{
+          alert("O denominador não pode ser Zero!")
+        }
+  
+        //Saída
+        
+      }
+      }
+
+      var calc1 = new Calculadora()
+         
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Calculadora</h1>
+    <input id= "num1" type="number" placeholder="Número 1" />
+    <input id= "num2" type="number" placeholder="Número 2" />
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+  </body>
+</html>
